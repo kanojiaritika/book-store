@@ -1,0 +1,56 @@
+// Firstly we need to create two folders:
+
+i. Backend
+ii. Frontend
+Backend:
+
+1. Go to backend terminal and write 'npm init -y'.
+2. Go to 'package.json' file and write 'type: modules'
+3. In terminal write 'npm i express nodemon'
+4. Go to 'package.json' and in scripts write this:
+   "scripts": {
+   "start": "node index.js",
+   "dev": "nodemon index.js"
+   },
+5. Create a 'index.js' file in backend folder
+6. Now create a file 'config.js'
+7. Go to mongodb.com -> create collection (no need to create if already exists) -> Click 'connect' -> drivers -> copy link.
+8. Paste link in config.js in a const variable and replace <username> and <password> with actual username and password AND project folder name before question mark..
+9. To create a connection install mongoose 'npm i mongoose'
+10. import mongoose in index.js and using connect() we can connect mongodb database and index.js or our backend.
+11. Create a models folder and in that create 'bookModel.js'
+12. In this file we create schema for our book
+    MONGODB REPRESENTATION IN NODEJS/EXPRESSJS:
+
+---
+
+## | CODE SIDE => MONGODB |
+
+| DATABASE DATABASE |
+| SETUP => FORMATION |
+
+| MODEL => COLLECTION |
+
+| SCHEMA => DOCUMENTS |
+
+---
+
+13. Make sure to export everything and only then you can import
+
+14. request => data sent by client
+15. response => data sent by server
+16. Also one more thing our main file will be our 'index.js' in backend which we will be running 'npx nodemon index.js'
+17. Now to check POST request we need to use postman.com.
+    POSTMAN.COM:
+    Click new tab -> Select request method (POST in our case) -> To send body to our route click on 'Body'->Change text to JSON
+18. CORS policy: Cross-origin resource sharing is a security mechanism in web browsers that restricts the ability of web page to make requests to a different domain.
+    It prevents unauthorised cross origin access to a resource or server.
+
+<!-- FRONTEND -->
+
+1. In your main project folder go to terminal
+2. Write npm create vite@latest OR npm create-react-app
+3. For vite write name of your folder when asked for vite-project name
+4. Select React -> JavaScript
+5. In terminal install tailwind css
+6. Go to tailwind.config.js
